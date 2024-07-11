@@ -1,0 +1,490 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+    }
+    
+    /*   تنسيق شريط الروابط وصور المتجر*/
+
+    .navbar{
+        display:flex;
+        align-items:center;
+        padding:20px;
+    
+    }
+    
+
+
+    /*  بداية تنسيق الروابط*/
+
+    nav{
+        flex:1;
+        text-align:right;
+    }   
+
+
+    nav ul {
+    display:inline-block;
+   list-style-type: none;
+    }
+    nav ul li {
+        display:inline-block;
+        margin-right:20px;
+        }
+    
+    a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    
+    }
+
+
+    .minio{
+width: 28px;
+margin-left: 20px;
+display: none;
+    }
+
+
+/* ميديا كويري 800 بكسل*/
+
+
+
+  
+
+
+
+/*نهاية ميديا كويري 800 بكسل*/
+
+/* ميديا كويري 600 بكسل*/
+@media  (max-width: 600px){
+
+    .row{
+        text-align: center;
+
+
+    }
+    .col-4, .col-2, .col-3 {
+
+        flex-basis: 100%;
+    }
+    
+
+
+
+
+}
+
+
+    
+
+    /*   نهاية تنسيق الروابط*/
+
+
+
+
+
+    /*   بداية تنسيق حاوية الصفحة الرئيسية  */
+
+    p{
+    color:#555;
+    }
+    
+    .containar{
+        max-width:900px;
+        margin:auto;
+        padding-left:25px;
+        padding-right:25px;
+        
+        }
+    
+    .row{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    text-align: center;
+   
+   
+    }
+
+    .row2{
+        justify-content: space-between;
+        margin-top: 100px ;
+        padding-top: 50px;
+       
+  
+      }
+      h3{
+
+        color:#3a405a;
+
+      }
+      select{
+    border: 1px solid  #5e73ce;
+padding: 5px;
+box-shadow: 0 0 20px 0px rgba(83, 80, 221, 0.5);
+
+
+      }
+
+
+      .grob{
+          margin-bottom:10px ;
+      }
+
+      .grob span{
+     border: 1px solid  #3a405a ;
+     margin: 0px auto  80px;
+     padding: 5px 10px;
+     box-shadow: 0 0 20px 0px rgba(83, 80, 221, 0.5);
+      }
+
+      .grob span:hover{
+    background-color:  #3a405a;  
+    color: white;
+    }
+
+      select:focus{
+
+
+      }
+
+
+
+  
+    .col-2{
+    flex-basis:50%;
+    min-width:300px;
+    
+    }
+    
+    .col-2 img{
+    max-width:100%;
+    padding:50px 0px;
+    
+    }
+    
+    .col-2 h1{
+    
+    font-size:50px;
+    line-height:60px;
+    margin:25px 0;
+    }
+    
+
+    /*   بداية تنسيق الازرار  */
+
+    .btn{
+    display:inline-block;
+    background:#3a405a;
+    color:#fff;
+    padding:8px 30px;
+    margin:30px 0px;
+    border-radius:30px;
+    transition:background 0.5s;
+    transition: all 0.5s ;
+    }
+    
+    .btn:hover{
+    background:#563434;
+    transform:scale(1.1,1.1);
+    }
+    
+     /*   نهاية تنسيق الازرار  */
+
+     
+     .header{
+     
+        background-color:#3a405a;
+        box-shadow: 0 0 20px 0px rgb(71, 69, 212);
+        height: 100px;
+        z-index: 10;
+        position: fixed;
+        width: 100%;
+        margin-top: -100px;
+        
+        }
+        .header .row{
+        margin-top:70px;
+       
+        
+        }
+        
+   
+         /*   نهاية تنسيق حاوية الصفحة الرئيسية  */
+
+
+
+
+/*   بداية اول ثلاث صور بعدالصفحة الرئيسية   */
+.bdaih{
+    margin: 70px;
+}
+
+    .col-3{
+        
+    flex-basis:30%;
+    min-width:250px;
+    margin-bottom:30px;
+    
+    }
+    
+    .col-3 img{
+    width:100%;
+    }
+    
+    .smol-contener{
+        max-width:1080px;
+   margin: auto;
+    padding-left:25px;
+    padding-right:25px;
+    
+    margin-top: 100px;
+    
+    }
+
+
+
+
+    /*   نهاية اول ثلاث صور بعدالصفحة الرئيسية   */
+
+
+
+
+
+/*      بداية تنسيق صفحاات الملابس والاحذية والشنط   */
+
+
+    .col-4{
+        flex-basis:25%;
+        padding:10px;
+        min-width:200px;
+        margin-bottom:50px;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        transition: transform 0.5s;
+        
+        }
+        
+        .col-4  img{
+        width:100%;
+        }
+        
+        .tital{
+        text-align:center;
+        margin:0 outo 80px;
+        position:relative;
+        line-height:60px;
+        color:#555;
+        }
+        
+       .tital::after{
+        
+        content:'';
+        background:#3a405a;
+        width:80px;
+        height:5px;
+        border-radius:5px;
+        position:absolute;
+        bottom:0;
+        left:50%;
+        transform:translateX(-50%);
+        
+        }
+        
+        h4{
+        color:#555;
+        font-weight:normal;
+        }
+        .col-4 p{
+        font-size:14px;
+      
+        }
+        
+        .col-4:hover{
+        transform:translateY(-5px);
+        
+        }
+
+
+
+
+        /*      نهاية تنسيق صفحاات الملابس والاحذية والشنط   */
+
+
+
+        /* بداية تنسيق التخفيضات ملابس احذية شنط*/
+    
+        .ofer{
+            background: radial-gradient(#c3cced,#3a405a);
+            margin-top: 80px;
+            padding:30px 0 ;
+           
+            
+            }
+
+
+            
+
+                
+        /* نهاية تنسيق التخفيضات ملابس احذية شنط*/
+
+
+
+
+
+          .mnnahn   {
+padding-top: 100px;
+          }
+
+
+          .mnnahn .col-3{
+text-align: center;
+padding: 40px 20px;
+box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+transition: all 0.5s;
+          }
+
+          .mnnahn .col-3 img{
+        width: 200px;
+        margin-top: 20px;
+        border-radius: 50px;
+
+
+          }
+
+          .mnnahn .col-3:hover{
+          transform: translateY(-10px);
+          
+
+          }
+
+
+
+
+
+
+         /* بداية طرق الدفع*/
+
+        .brand{
+
+margin:100px auto;
+
+        }
+
+
+        .col-5{
+            width: 160px;
+        }
+
+        .col-5 img{
+
+            width: 100%;
+            cursor: pointer;
+            filter: grayscale(100% );
+
+        }
+        .col-5 img:hover{
+
+            filter: grayscale(0);
+        }
+
+         /* نهاية طرق الدفع*/
+
+
+          /* بداية ذيل الصفححة*/
+         .footer{
+         background-color: #3a405a;
+         color: #8a8a8a;
+         font-size: 14px;
+         padding:60px 0 40px ;
+         
+         }
+
+         .containarfoter{
+            max-width:1000px;
+            margin:auto;
+            padding-left:25px;
+            padding-right:25px;
+            margin-right: 200px;
+
+         }
+
+         .footer .pp1{
+             color: #8a8a8a;
+         }
+         .footer p{
+       color: rgb(253, 253, 253);
+         }
+
+
+         .footer h3{
+            color: rgb(253, 253, 253);
+            margin-bottom: 20px;
+         
+              }
+
+
+
+              .foot-col-1, .foot-col-2, foot-col-3{
+               min-width: 250px;
+              
+               margin-bottom: 20px;
+                
+
+              }
+
+              .foot-col-1{
+
+                flex-basis:30% ;
+                flex:1 ;
+               
+                   
+              }
+              
+              .foot-col-2{
+                
+                flex:1 ;
+                
+
+              }
+             
+
+              .foot-col-2 img{
+              width: 170px;
+              margin-bottom: 20px;
+              
+
+              }
+
+              .foot-col-3{
+                flex-basis:20% ;
+                text-align: center;   
+              }
+              .foot-col-3 ul li{
+             list-style-type: none;
+              }
+
+              .logoap{
+                  margin-top: 20px;
+              }
+
+              .logoap img{
+                  width: 140px;
+              }
+
+
+              
+
+            .copy{
+                   text-align: center;
+                       font-size: 20px;
+
+            }
+
+
+
+
+          /* نهاية ذيل الصفححة*/
